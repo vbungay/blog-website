@@ -37,7 +37,7 @@ const Navbar = () => {
     return (
         <div className={styles.container}>
             <Link href="/" className={styles.logo}>
-                visual network creatives
+                vnc
             </Link>
             <div className={styles.links}>
                 {links.map((link) => (
