@@ -9,10 +9,10 @@ const Footer = () => {
                 ©2023 Visual Network Creatives. All rights reserved.
             </div>
             <div className={styles.socials}>
-                <AiFillFacebook className={styles.socialFb} />
-                <AiFillInstagram className={styles.socialIg} />
-                <AiOutlineTwitter className={styles.socialTw} />
-                <AiFillLinkedin className={styles.socialLi} />
+                <AiFillFacebook />
+                <AiFillInstagram />
+                <AiOutlineTwitter />
+                <AiFillLinkedin />
             </div>
         </div>
     )
