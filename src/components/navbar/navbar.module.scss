@@ -1,0 +1,29 @@
+.container {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   /*  padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px) saturate(160%) contrast(45%) brightness(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+ */
+    .logo {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .btn {
+        padding: 5px;
+        border: none;
+        background-color: #363795;
+        color: #fff;
+        border-radius: 3px;
+    }
+}
