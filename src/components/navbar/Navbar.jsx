@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import React from 'react'
 import styles from './navbar.module.scss'
+import ThemeToggle from '../ThemeToggle/ThemeToggle'
 
 //array of navigation links
 const links = [
@@ -40,6 +41,7 @@ const Navbar = () => {
                 vnc
             </Link>
             <div className={styles.links}>
+                <ThemeToggle />
                 {links.map((link) => (
                     <Link key={link.id} href={link.url} className={styles.link}>
                         {link.title}

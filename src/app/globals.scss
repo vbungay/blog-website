@@ -40,3 +40,15 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.theme {
+  transition: 1s all ease;
+}
+
+.light {
+  background-color: linear-gradient(to right bottom, #f12711, #f5af19);
+}
+
+.dark {
+  background: linear-gradient(to right bottom, #2c3e50, #005C97);
+}

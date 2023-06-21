@@ -1,9 +1,22 @@
+"use client"
+
+import { useContext, useEffect, useState } from 'react';
+import dynamic from 'next/dynamic';
 import Image from 'next/image'
 import styles from './page.module.scss'
+import { ThemeContext } from '@/context/ThemeContext';
 import Hero from "public/hero.png";
+import HeroAlt from "public/heroAlt.png";
 import { BsArrowUpRight } from 'react-icons/bs'
 
+const HeroLight = dynamic(() => import('../../public/hero.png'));
+const HeroDark = dynamic(() => import('../../public/heroAlt.png'));
+
 export default function Home() {
+  const { mode } = useContext(ThemeContext);
+
+  const heroImage = mode === 'light' ? Hero : HeroAlt;
+
   return (
     <div className={styles.container}>
       <div className={styles.item}>
@@ -19,7 +32,7 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.item}>
-        <Image src={Hero} alt="" className={styles.img} />
+      <Image src={heroImage} alt="" className={styles.img} />
       </div>
     </div>
   )
