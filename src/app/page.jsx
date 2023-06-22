@@ -24,15 +24,17 @@ export default function Home() {
           Visual Network Creatives
         </h1>
         <p className={styles.desc}>
-        Embrace the power of visual connectivity, let us transform your online presence into a captivating network of creativity, functionality, and success!
+          Embrace the power of visual connectivity, let us transform your online presence into a captivating network of creativity, functionality, and success!
         </p>
         <div className={styles.cta}>
-          <p>Get in touch</p>
-          <BsArrowUpRight />
+          <a href="/contact" className={styles.link}>
+            <p url="/contact">Get in touch</p>
+            <BsArrowUpRight />
+          </a>
         </div>
       </div>
       <div className={styles.item}>
-      <Image src={heroImage} alt="" className={styles.img} />
+        <Image src={heroImage} alt="" className={styles.img} />
       </div>
     </div>
   )

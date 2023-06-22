@@ -43,10 +43,11 @@ a {
 
 .theme {
   transition: 1s all ease;
+  transition-delay: 250ms;
 }
 
 .light {
-  background-color: linear-gradient(to right bottom, #f12711, #f5af19);
+  background: linear-gradient(to right bottom, #f12711, #f5af19);
 }
 
 .dark {
