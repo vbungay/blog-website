@@ -29,14 +29,28 @@
 
     .textContainer {
         display: flex;
+        flex-direction: column;
         gap: 100px;
+        text-align: center;
 
         .item {
+            margin-top: 50px;
+        }
+
+        /* .item {
             flex: 1;
             margin-top: 50px;
             display: flex;
             flex-direction: column;
             gap: 30px;
-        }
+
+            .title {
+                color: #005C97;
+            }
+
+            .desc {
+                color: #111;
+            }
+        } */
     }
 }

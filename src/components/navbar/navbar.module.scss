@@ -3,7 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-   /*  padding: 20px;
+
+    /*  padding: 20px;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px) saturate(160%) contrast(45%) brightness(140%);
     -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
@@ -22,8 +23,10 @@
     .btn {
         padding: 10px;
         border: none;
-        background-color: #A7CAF0;
-        color: #111;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px) saturate(160%) contrast(50%) brightness(130%);
+        -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+        color: #fff;
         border-radius: 3px;
         cursor: pointer;
     }
